@@ -9,11 +9,11 @@ $response = $dbService->query($delete);
 
 echo $dbService->error;
 
-echo '<div>Deleted users: ' . (int) $response . '</div>';
+echo '<div>Deleted all users</div>';
 
 // insert defaults
 
-$insert = "INSERT INTO user
+$insert = "INSERT INTO `user`
 VALUES (
     NULL,
     'admin',
@@ -35,4 +35,4 @@ $response = $dbService->query($insert);
 
 echo $dbService->error;
 
-echo '<div>Added users: ' . (int) $response . '</div>';
+echo '<div>Added default users</div>';
